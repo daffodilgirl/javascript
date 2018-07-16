@@ -12,6 +12,8 @@ function checkPrime(){
                 break;
             }
     }
+
+
     if(flag)
         {
             showresult("number is:"+num+" Prime");
@@ -118,15 +120,6 @@ function sumgetssingledigit(){
     }
     showresult("sumofdigitssingle is:"+sum); 
 }
-
-
-
-
-
-
-
-
-
 function getUserInput(){
 num=document.getElementById("num").value;
     return num;
