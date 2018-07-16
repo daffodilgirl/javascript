@@ -65,6 +65,68 @@ function fibonacci(){
     }
      showresult("fabonacci series :"+num+" is:"+output);
 }
+function reverse(){
+var num=getUserInput();
+ var rev ="";
+
+ while (num != 0) {
+     var r=num%10;
+rev=rev*10+r;
+    num=parseInt(num/10);
+ }
+  
+    
+      showresult("reverse :"+rev);
+}
+
+function IsPalindrome(){
+    
+var num=getUserInput();
+    var rev ="";
+  var num1=num;
+    while(num!=0){
+var r=parseInt(num%10);
+rev=rev*10+r;
+    num=parseInt(num/10);
+    }
+if(num1==rev)
+    {
+         showresult("Palindrome :");
+    }
+    else{
+          
+ showresult(" not Palindrome :");
+}
+}
+function sumofdigits(){
+num=getUserInput();
+    var sum=0;
+    while(num!=0){
+        sum +=parseInt((num%10));
+        num=parseInt(num/10);
+    }
+    showresult("sumofdigits is:"+sum); 
+    
+    
+}
+function sumgetssingledigit(){
+   num=getUserInput(); 
+    var sum=num;
+    while(num>9){
+        sum =parseInt((num%10)+(num/10));
+        num=sum;
+    }
+    showresult("sumofdigitssingle is:"+sum); 
+}
+
+
+
+
+
+
+
+
+
 function getUserInput(){
 num=document.getElementById("num").value;
     return num;
